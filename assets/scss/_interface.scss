@@ -1,0 +1,25 @@
+.section {
+	&--bg {
+		background: linear-gradient(20deg, #000 0%, rgb(0 0 0 / 0%) 100%),
+			url('@img/hero/background.jpg');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+
+.text {
+	margin: 0;
+}
+
+.link {
+	border: 1px solid var(--light-color);
+	border-radius: 12px;
+	padding: 15px 55px;
+	background-color: var(--orange-color);
+	transition: transform 0.4s;
+
+	&:hover {
+		transform: scale(0.95);
+	}
+}
