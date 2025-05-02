@@ -5,6 +5,12 @@
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
+
+		@media (max-width: 767px) {
+			background: linear-gradient(194deg, #000 5.93%, rgb(0 0 0 / 0%) 100%), url('path_to_image'),
+				url('@img/hero/background-phone.jpg');
+			background-position: 40%;
+		}
 	}
 }
 

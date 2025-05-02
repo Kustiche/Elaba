@@ -43,6 +43,10 @@ body {
 	&--wide {
 		padding: 0 85px;
 		max-width: 100%;
+
+		@media (max-width: 767px) {
+			padding: 0 20px;
+		}
 	}
 }
 

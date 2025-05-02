@@ -11,20 +11,42 @@
 	}
 
 	&__title {
+		@include adaptive-font(40, 25);
 		margin: 0;
 		margin-bottom: 40px;
 		font-weight: 700;
-		font-size: 40px;
 		text-transform: uppercase;
+
+		@media (min-width: 1920px) {
+			font-size: 40px;
+		}
+
+		@media (max-width: 767px) {
+			margin-bottom: 15px;
+		}
 	}
 
 	&__text {
 		margin-bottom: 40px;
+
+		@media (max-width: 767px) {
+			margin-bottom: 50px;
+		}
 	}
 
 	&__link {
 		margin-bottom: 50px;
 		padding: 20px 100px;
+
+		@media (max-width: 767px) {
+			margin-bottom: 40px;
+			padding: 15px 70px;
+		}
+	}
+
+	@media (max-width: 767px) {
+		padding-top: 30px;
+		padding-bottom: 65px;
 	}
 }
 
@@ -38,6 +60,10 @@
 		align-items: center;
 		justify-content: space-between;
 		margin-bottom: 15px;
+
+		@media (max-width: 767px) {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__icon {
@@ -50,5 +76,9 @@
 	&__text {
 		max-width: 570px;
 		font-size: 16px;
+
+		@media (max-width: 575px) {
+			font-size: 14px;
+		}
 	}
 }
