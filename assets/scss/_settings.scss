@@ -22,6 +22,10 @@ body {
 	&.lock {
 		overflow: hidden;
 	}
+
+	@media (max-width: 1920px) {
+		font-size: 18px;
+	}
 }
 
 .site-container {

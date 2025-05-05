@@ -1,4 +1,15 @@
 .section {
+	padding: 60px 0;
+
+	&--hero-pg {
+		padding-top: 75px;
+		padding-bottom: 95px;
+	}
+
+	&--services-pg {
+		padding-top: 120px;
+	}
+
 	&--bg {
 		background: linear-gradient(20deg, #000 0%, rgb(0 0 0 / 0%) 100%),
 			url('@img/hero/background.jpg');
@@ -23,6 +34,39 @@
 	border-radius: 12px;
 	padding: 15px 55px;
 	background-color: var(--orange-color);
+	transition: transform 0.4s;
+
+	&:hover {
+		transform: scale(0.95);
+	}
+}
+
+.title {
+	@include adaptive-font(42, 24);
+	margin: 0;
+	font-weight: 600;
+
+	@media (min-width: 1920px) {
+		font-size: 42px;
+	}
+}
+
+.subtitle {
+	@include adaptive-font(22, 20);
+	margin: 0;
+	font-weight: 500;
+
+	@media (min-width: 1920px) {
+		font-size: 23px;
+	}
+}
+
+.link-blue {
+	border-radius: 6px;
+	padding: 10px 0;
+	text-align: center;
+	color: var(--light-color);
+	background-color: var(--blue-color);
 	transition: transform 0.4s;
 
 	&:hover {
