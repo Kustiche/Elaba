@@ -1,0 +1,181 @@
+.prices {
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__inner-img {
+		margin-bottom: 45px;
+		border-radius: 12px;
+		width: 100%;
+		min-height: 450px;
+		background-image: url('@img/prices/electricians.jpg');
+		background-position: left;
+		background-size: cover;
+		background-repeat: no-repeat;
+
+		@media (max-width: 768px) {
+			margin-bottom: 20px;
+			min-height: 325px;
+		}
+
+		@media (max-width: 576px) {
+			background-image: url('@img/prices/electricians-576.jpg');
+		}
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		gap: 15px;
+
+		@media (max-width: 860px) {
+			flex-direction: column;
+			gap: 0;
+		}
+	}
+
+	&__inner {
+		max-width: 340px;
+
+		@media (max-width: 860px) {
+			margin-bottom: 25px;
+		}
+	}
+
+	&__title {
+		margin-bottom: 40px;
+
+		@media (max-width: 768px) {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__text {
+		font-size: 16px;
+		color: var(--gray-color);
+	}
+
+	&__services {
+		width: 100%;
+		max-width: 830px;
+	}
+
+	&__desc {
+		@include adaptive-font(20, 16);
+		margin-bottom: 65px;
+		max-width: 665px;
+		font-weight: 500;
+		color: var(--gray-color);
+
+		@media (min-width: 1920px) {
+			font-size: 20px;
+		}
+
+		@media (max-width: 768px) {
+			margin-bottom: 35px;
+		}
+	}
+}
+
+.prices-cards {
+	&__card {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		gap: 10px;
+		margin-bottom: 50px;
+		max-width: 625px;
+		color: var(--gray-color);
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: -25px;
+			border-top: 1px solid var(--mariner-color);
+			width: 780px;
+			opacity: 0.5;
+		}
+
+		&:first-child {
+			&::after {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: -25px;
+				border-top: 1px solid var(--mariner-color);
+				width: 100%;
+				max-width: 780px;
+				opacity: 0.5;
+			}
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+			margin-bottom: 20px;
+
+			&::before {
+				bottom: -10px;
+			}
+
+			&:first-child {
+				&::after {
+					top: -10px;
+				}
+			}
+		}
+	}
+
+	&__subtitle {
+		margin-bottom: 10px;
+		max-width: 360px;
+		color: var(--mine-shaft-color);
+
+		@media (max-width: 768px) {
+			margin-bottom: 5px;
+		}
+	}
+
+	&__text {
+		opacity: 0.8;
+
+		@media (max-width: 768px) {
+			margin-bottom: 5px;
+		}
+	}
+
+	&__inner {
+		width: 100%;
+		max-width: 200px;
+	}
+
+	&__price {
+		margin-bottom: 20px;
+		opacity: 0.8;
+
+		@media (max-width: 768px) {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__link {
+		display: inline-block;
+		border-radius: 6px;
+		padding: 10px 0;
+		width: 100%;
+		max-width: 200px;
+		text-align: center;
+		color: var(--light-color);
+		background-color: var(--blue-color);
+		transition: transform 0.4s;
+
+		&:hover {
+			transform: scale(0.95);
+		}
+	}
+}
