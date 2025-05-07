@@ -2,7 +2,7 @@
 	border-radius: 12px;
 	padding: 55px 35px;
 	width: 100%;
-	background-image: url('@img/bid/background.jpg');
+	background: var(--blue-color) url('@img/bid/background.jpg');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;

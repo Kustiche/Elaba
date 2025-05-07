@@ -23,6 +23,12 @@
 			background-position: 40%;
 		}
 	}
+
+	&--removed {
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
 }
 
 .text {
