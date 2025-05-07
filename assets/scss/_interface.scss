@@ -4,6 +4,11 @@
 	&--hero-pg {
 		padding-top: 75px;
 		padding-bottom: 95px;
+
+		@media (max-width: 768px) {
+			padding-top: 30px;
+			padding-bottom: 65px;
+		}
 	}
 
 	&--services-pg {
@@ -11,16 +16,21 @@
 	}
 
 	&--bg {
-		background: linear-gradient(20deg, #000 0%, rgb(0 0 0 / 0%) 100%),
-			url('@img/hero/background.jpg');
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
+	}
+
+	&--hero-bg {
+		background: linear-gradient(20deg, #000 0%, rgb(0 0 0 / 0%) 100%),
+			url('@img/hero/background.jpg');
 
 		@media (max-width: 767px) {
 			background: linear-gradient(194deg, #000 5.93%, rgb(0 0 0 / 0%) 100%), url('path_to_image'),
 				url('@img/hero/background-phone.jpg');
 			background-position: 40%;
+			background-size: cover;
+			background-repeat: no-repeat;
 		}
 	}
 
@@ -37,18 +47,6 @@
 
 .text {
 	margin: 0;
-}
-
-.link {
-	border: 1px solid var(--light-color);
-	border-radius: 12px;
-	padding: 15px 55px;
-	background-color: var(--orange-color);
-	transition: transform 0.4s;
-
-	&:hover {
-		transform: scale(0.95);
-	}
 }
 
 .title {
