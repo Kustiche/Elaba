@@ -1,0 +1,10 @@
+.questions {
+	&__title {
+		margin-bottom: 40px;
+		text-align: center;
+
+		@media (max-width: 768px) {
+			margin-bottom: 25px;
+		}
+	}
+}
